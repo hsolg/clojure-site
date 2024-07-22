@@ -910,7 +910,7 @@ A consumer API for this protocol is provided since Clojure 1.12.0-alpha2.
 [[procurers]]
 == Procurers
 
-Dependency coordinates are interpreted by procurers, which understand a particular coordinate type and know how to find dependencies and download artifacts for a library. The Clojure CLI currently suports the folllowing procurers: <<clojure_cli#procurer_mvn, Maven>>, <<clojure_cli#procurer_git,Git>>, and <<clojure_cli#procurer_local,local>> (which includes both directories and jars). The underlying tools.deps library supports procurer extensions when used as a library.
+Dependency coordinates are interpreted by procurers, which understand a particular coordinate type and know how to find dependencies and download artifacts for a library. The Clojure CLI currently supports the following procurers: <<clojure_cli#procurer_mvn, Maven>>, <<clojure_cli#procurer_git,Git>>, and <<clojure_cli#procurer_local,local>> (which includes both directories and jars). The underlying tools.deps library supports procurer extensions when used as a library.
 
 The coordinate attributes determine which procurer is used. In general, most procurer attributes are qualified per procurer type (there are a few exceptions). Procurer-independent coordinate attributes use the `deps` qualifier.
 
